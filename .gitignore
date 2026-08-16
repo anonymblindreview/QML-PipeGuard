@@ -1,0 +1,23 @@
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# results (keep structure, drop content)
+results/*.json
+results/figures/
+results/figures_*/
+# but always keep archived real-hardware runs
+!results/qpu_runs/
+!results/qpu_runs/*.json
+
+# editor
+.vscode/
+.idea/
+*.swp
+
+# os
+.DS_Store
+Thumbs.db

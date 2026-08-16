@@ -1,0 +1,217 @@
+{
+  "experiment": "detection",
+  "backend": "ibm_fez",
+  "job_id": "d884b8is46sc73f8v28g",
+  "wall_seconds": 30.691540002822876,
+  "shots_per_circuit": 2280,
+  "delta": 0.5,
+  "eps": 0.15,
+  "eta": 0.05,
+  "x_i": [
+    0.4,
+    1.2
+  ],
+  "x_j": [
+    1.1,
+    0.3
+  ],
+  "fingerprint_honest": {
+    "IX": 0.4412280701754386,
+    "IY": 0.05964912280701754,
+    "IZ": 0.5587719298245614,
+    "XI": -0.1394736842105263,
+    "YI": -0.25,
+    "ZI": 0.612280701754386,
+    "ZZ": 0.625438596491228
+  },
+  "fingerprint_sneaky": {
+    "IX": -0.04736842105263158,
+    "IY": 0.41754385964912283,
+    "IZ": 0.5535087719298246,
+    "XI": 0.2412280701754386,
+    "YI": -0.14473684210526316,
+    "ZI": 0.6087719298245614,
+    "ZZ": 0.6263157894736842
+  },
+  "weak_family": [
+    "ZZ"
+  ],
+  "complete_family": [
+    "XI",
+    "YI",
+    "ZI",
+    "IX",
+    "IY",
+    "IZ"
+  ],
+  "summary_weak": {
+    "n_rounds": 1,
+    "n_violations": 0,
+    "n_drift_events": 1,
+    "worst_deviation": 0.0008771929824561431,
+    "worst_pauli": "ZZ",
+    "epsilon": 0.15,
+    "head_hash": "a25340773d1a06a4519551c5215e96aeec724b622cc3a0d50878fd88bdf7915a",
+    "halted": false
+  },
+  "summary_complete": {
+    "n_rounds": 6,
+    "n_violations": 3,
+    "n_drift_events": 3,
+    "worst_deviation": 0.48859649122807014,
+    "worst_pauli": "IX",
+    "epsilon": 0.15,
+    "head_hash": "c2150f502f24b076b06d9dfc9aecd237966323b261ccddb75f14f94c2b4ab55d",
+    "halted": true
+  },
+  "audit_log_weak": [
+    {
+      "round_idx": 0,
+      "pauli": "ZZ",
+      "measured": 0.6263157894736842,
+      "reference": 0.625438596491228,
+      "deviation": 0.0008771929824561431,
+      "epsilon": 0.15,
+      "kind": "within_tolerance",
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "a25340773d1a06a4519551c5215e96aeec724b622cc3a0d50878fd88bdf7915a",
+      "unix_time": 1779451329.3284082
+    }
+  ],
+  "audit_log_complete": [
+    {
+      "round_idx": 0,
+      "pauli": "ZI",
+      "measured": 0.6087719298245614,
+      "reference": 0.612280701754386,
+      "deviation": 0.0035087719298245723,
+      "epsilon": 0.15,
+      "kind": "within_tolerance",
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "9b6e69bad7d633bf41a50d300e333acc32ac0b9972e016e154dcd52b75b16312",
+      "unix_time": 1779451329.3284082
+    },
+    {
+      "round_idx": 1,
+      "pauli": "IX",
+      "measured": -0.04736842105263158,
+      "reference": 0.4412280701754386,
+      "deviation": 0.48859649122807014,
+      "epsilon": 0.15,
+      "kind": "beyond_tolerance",
+      "prev_hash": "9b6e69bad7d633bf41a50d300e333acc32ac0b9972e016e154dcd52b75b16312",
+      "hash": "88eb07abde749e1c8cc7d18bf487b873003ce1bae5fd1d46427df96c82436e3b",
+      "unix_time": 1779451329.3284082
+    },
+    {
+      "round_idx": 2,
+      "pauli": "IZ",
+      "measured": 0.5535087719298246,
+      "reference": 0.5587719298245614,
+      "deviation": 0.0052631578947367474,
+      "epsilon": 0.15,
+      "kind": "within_tolerance",
+      "prev_hash": "88eb07abde749e1c8cc7d18bf487b873003ce1bae5fd1d46427df96c82436e3b",
+      "hash": "ddbbaaf7af577df839a57dec1b3e9f89c5f3c8f1a60153e6438edaa620a21c8a",
+      "unix_time": 1779451329.3284082
+    },
+    {
+      "round_idx": 3,
+      "pauli": "XI",
+      "measured": 0.2412280701754386,
+      "reference": -0.1394736842105263,
+      "deviation": 0.3807017543859649,
+      "epsilon": 0.15,
+      "kind": "beyond_tolerance",
+      "prev_hash": "ddbbaaf7af577df839a57dec1b3e9f89c5f3c8f1a60153e6438edaa620a21c8a",
+      "hash": "80f4dbea42a1b2304841a677dfb2f5c1403c3e3a440022aaaa1156376e38c1c4",
+      "unix_time": 1779451329.3284082
+    },
+    {
+      "round_idx": 4,
+      "pauli": "IY",
+      "measured": 0.41754385964912283,
+      "reference": 0.05964912280701754,
+      "deviation": 0.35789473684210527,
+      "epsilon": 0.15,
+      "kind": "beyond_tolerance",
+      "prev_hash": "80f4dbea42a1b2304841a677dfb2f5c1403c3e3a440022aaaa1156376e38c1c4",
+      "hash": "83cb178a8216e6905304fb1d5932892cd7644b2079f618cd1c9c7fb0b3db65a5",
+      "unix_time": 1779451329.3294065
+    },
+    {
+      "round_idx": 5,
+      "pauli": "YI",
+      "measured": -0.14473684210526316,
+      "reference": -0.25,
+      "deviation": 0.10526315789473684,
+      "epsilon": 0.15,
+      "kind": "within_tolerance",
+      "prev_hash": "83cb178a8216e6905304fb1d5932892cd7644b2079f618cd1c9c7fb0b3db65a5",
+      "hash": "c2150f502f24b076b06d9dfc9aecd237966323b261ccddb75f14f94c2b4ab55d",
+      "unix_time": 1779451329.3294065
+    }
+  ],
+  "raw_counts": {
+    "honest::IX": {
+      "0": 1643,
+      "1": 637
+    },
+    "honest::IY": {
+      "1": 1072,
+      "0": 1208
+    },
+    "honest::IZ": {
+      "0": 1777,
+      "1": 503
+    },
+    "honest::XI": {
+      "0": 981,
+      "1": 1299
+    },
+    "honest::YI": {
+      "1": 1425,
+      "0": 855
+    },
+    "honest::ZI": {
+      "0": 1838,
+      "1": 442
+    },
+    "honest::ZZ": {
+      "10": 248,
+      "00": 1626,
+      "01": 179,
+      "11": 227
+    },
+    "sneaky::IX": {
+      "1": 1194,
+      "0": 1086
+    },
+    "sneaky::IY": {
+      "1": 664,
+      "0": 1616
+    },
+    "sneaky::IZ": {
+      "0": 1771,
+      "1": 509
+    },
+    "sneaky::XI": {
+      "0": 1415,
+      "1": 865
+    },
+    "sneaky::YI": {
+      "0": 975,
+      "1": 1305
+    },
+    "sneaky::ZI": {
+      "0": 1834,
+      "1": 446
+    },
+    "sneaky::ZZ": {
+      "00": 1595,
+      "01": 182,
+      "11": 259,
+      "10": 244
+    }
+  }
+}

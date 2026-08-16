@@ -1,0 +1,65 @@
+{
+  "experiment": "sample_complexity_validation",
+  "sneaky_variant": "weak",
+  "sneaky_angle": 0.5235987755982988,
+  "noise_backend": "fake_fez",
+  "delta": 0.5,
+  "eps": 0.15,
+  "eta": 0.05,
+  "k": 6,
+  "C": 1.7320508075688772,
+  "gamma": 0.13867513459481293,
+  "N_theorem": 13680,
+  "ref_shots": 100000,
+  "fingerprint_honest_ref": {
+    "XI": -0.29698,
+    "YI": -0.3933,
+    "ZI": 0.7688,
+    "IX": 0.49434,
+    "IY": -0.06674,
+    "IZ": 0.76336
+  },
+  "fingerprint_sneaky_ref": {
+    "XI": -0.06616,
+    "YI": -0.48992,
+    "ZI": 0.7673,
+    "IX": 0.46296,
+    "IY": 0.19188,
+    "IZ": 0.76712
+  },
+  "true_deviations": {
+    "XI": 0.23082000000000003,
+    "YI": 0.09662000000000004,
+    "ZI": 0.0015000000000000568,
+    "IX": 0.03138000000000002,
+    "IY": 0.25861999999999996,
+    "IZ": 0.0037599999999999856
+  },
+  "trials_per_setting": 20,
+  "results": {
+    "N": {
+      "shots_per_obs": 2280,
+      "trials": 20,
+      "true_positives": 20,
+      "false_positives": 0,
+      "tpr": 1.0,
+      "fpr": 0.0
+    },
+    "N_over_10": {
+      "shots_per_obs": 228,
+      "trials": 20,
+      "true_positives": 19,
+      "false_positives": 3,
+      "tpr": 0.95,
+      "fpr": 0.15
+    },
+    "N_over_100": {
+      "shots_per_obs": 22,
+      "trials": 20,
+      "true_positives": 20,
+      "false_positives": 20,
+      "tpr": 1.0,
+      "fpr": 1.0
+    }
+  }
+}
