@@ -38,7 +38,9 @@ def frame_bound(family):
     count, with equality witness sigma* proportional to (X+Y+Z).
 
     for the weak family (just ZZ) the family is not informationally complete
-    and no useful frame bound exists; we return +inf as a sentinel.
+    and no useful frame bound exists; we return +inf as a sentinel. the
+    extended tiers of the paper are numerical, not analytic: use
+    analysis/frame_bound.py for those.
     """
     import math
     if family == LOCAL_FAMILY:

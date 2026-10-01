@@ -8,7 +8,7 @@ C = sqrt(3) is analytic), so this script does numerical optimization:
 random sign patterns + SLSQP on the linear objective.
 
 tier 1: local paulis {X_i, Y_i, Z_i}, k=6, analytic C = sqrt(3)
-tier 15: tier 1 + {ZZ}, k=7 -- the kernel-relevant correlation for
+kernel tier (--tier 15): tier 1 + {ZZ}, k=7 -- the kernel-relevant correlation for
     inversion-test qsvm pipelines, where K = (1 + <Z1> + <Z2> + <ZZ>)/4
 tier 2: tier 1 + diagonal correlations {XX, YY, ZZ}, k=9
 tier 3: all non-identity 2-qubit pauli strings, k=15
